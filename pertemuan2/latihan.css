@@ -1,0 +1,26 @@
+.btn {
+    width: max-content;
+    padding: 15px;
+    display: block;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #3639ff !important;
+    color: white;
+}
+
+.btn-success {
+    background-color: #36ff40;
+    color: white;
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
+}
+
+.bg-dark {
+    background-color: #141313;
+}

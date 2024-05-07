@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Study Club Pertemuan 2</title>
+        <link rel="stylesheet" href="./style.css">
+        <!-- Bobot selector -->
+        <!-- 
+            tag -> 1
+            class -> 2
+            id -> 3
+            tag + class = 3
+            inline-css -> 99 
+        -->
+        <!-- Inline CSS -->
+        <style>
+            p {
+                /* Ini Makai Nama Warna */
+                color: blue;
+            }
+            .p {
+                /* Ini Makai RGB */
+                /* background-color: rgb(169, 96, 241); */
+                /* Ini Makai Hexacode */
+                background-color: #a783f3;
+            }
+            #p {
+                /* Pixel */
+                font-size: 50px;
+                /* Persent */
+                /* font-size: 50%; */
+                /* Rem */
+                /* font-size: 2rem; */
+                /* em */
+                /* font-size: 3em; */
+                /* vh */
+                /* font-size: 4vh; */
+            }
+
+            /* Bobot 4 */
+            /* Memanggil elemen dengan class heading-1 dan text-blue */
+            .heading-1.text-blue {
+                color: blue;
+                background-color: #ddd;
+            }
+
+            /* Memanggil elemen dengan class header yang didalam nya ada elemen apapun. */
+            .header > * {
+                color: yellow;
+            }
+
+            /* Memanggil elemen dengan class header yang di dalamnya memiliki class h1 */
+            .header .h1 {
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="p" id="p">Ini Merupakan Sebuah Paragraf.</p>
+        <p>Ini Paragraf ke-2</p>
+        <h1 class="heading-1 text-blue">Ini Adalah Sebuah Heading 1</h1>
+        <h2 class="heading-1">Ini Adalah Sebuah Heading 1</h1>
+
+        <div class="header">
+            <h1 class="h1">Nama Saya Kevin</h1>
+            <h3>Lorem, ipsum dolor.</p>
+        </div>
+
+        <div class="about">
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, assumenda.</h5>
+        </div>
+
+        <section class="skills">
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, recusandae.</h5>
+        </section>
+    </body>
+</html>
