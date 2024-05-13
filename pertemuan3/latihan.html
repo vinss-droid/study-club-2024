@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interaktid dengan Javascript</title>
+    </head>
+    <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            padding: 50px;
+            background-color: #000;
+        }
+    </style>
+    <body>
+        <h1 id="title">Ini adalah h1</h1>
+        <br>
+        <input type="text" placeholder="Enter Your Name" onkeyup="showYourName(this)">
+        <br><br>
+        <div class="box" id="box"></div>
+        <br>
+        <button onclick="changeColor('blue')">
+            Change Color
+        </button>
+    </body>
+    <script src="./latihan.js"></script>
+</html>
