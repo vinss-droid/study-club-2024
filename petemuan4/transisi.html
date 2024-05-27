@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transisi</title>
+    </head>
+    <style>
+        #box {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            left: 0;
+            top: 50px;
+            transition: left 1s;
+        }
+    </style>
+    <body>
+        <div id="box"></div>
+        
+        <button id="btn">Move Box</button>
+        <br><br><br><br>
+        <br><br><br><br>
+
+        <button id="changeBackground">Change Random Background Color</button>
+
+        <script>
+            const btn = document.getElementById('btn')
+            const box = document.getElementById('box')
+            const buttonChange = document.getElementById('changeBackground')
+
+            btn.addEventListener('click', function() {
+                box.style.left = '300px'
+            })
+
+            buttonChange.addEventListener('click', function() {
+                document.body.style.backgroundColor = randomColor()
+            })
+
+            function randomColor() {
+                let letter = '0123456789ABCDEF'
+                let color = '#' //#000 #fff
+
+                for (let i = 0; i < 6; i++) {
+                    color += letter[Math.floor(Math.random() * 16)]
+                }
+
+                return color
+            }
+        </script>
+    </body>
+</html>

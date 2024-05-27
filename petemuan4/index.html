@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar Interaktif Javascript Bagian 2</title>
+    </head>
+    <style>
+        #box {
+            padding: 50px;
+            background-color: blue;
+            margin: 2rem;
+            width: 50px;
+        }
+    </style>
+    <body>
+        <button id="myButton">Click Me!</button>
+        <br>
+        <button class="myButton2">Click Me 2 !</button>
+
+        <div id="box"></div>
+
+        <script>
+            // attribute ID pada element HTML tersebut
+            const button = document.getElementById('myButton')
+            // class pada element HTML tersebut
+            const button2 = document.getElementsByClassName('myButton2')
+
+            const box = document.getElementById('box')
+
+            button.addEventListener('click', function() {
+                // ini akan dijalankan apabilan button diklik
+                console.log(button)
+                alert('Ini Button 1')
+            })
+
+            box.addEventListener('mouseover', function() {
+                box.style.backgroundColor = 'yellow'
+            })
+        </script>
+    </body>
+</html>
